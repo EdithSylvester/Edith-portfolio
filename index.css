@@ -1,0 +1,598 @@
+* {
+    width: auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+/* HEADER */
+
+.logo{
+    margin: 3.125rem 0.1875rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 8.125;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 2.5rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #609C92;
+    color: white;
+    font-size: 18px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.875rem;
+    height: 1.3125rem;
+}
+
+.toggle-button .bar {
+    height: 0.1875rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 0.625rem;
+}
+
+    /* -ABOUT- */
+
+    #about { 
+        padding: 200px 200px;
+        background-color: #61777F;
+        color: white;
+        width: 100%;
+        height: 750px;
+        display: flex; 
+    }
+
+    .profile-pic img{
+        margin: 50px 50px;
+        border-radius: 50%;
+    }
+
+    .profile-text{
+        text-align: justify;
+        font-size: 18px;
+        margin: 50px 50px;
+
+    }
+
+    /* SKILLS */
+
+    #skills {
+        background-image: url(../Edith-portfolio/img/Hexagon.jpg);
+        background-size: cover;
+        height: 600px;
+        padding: 100px
+    }
+
+    .my-skills h2 {
+        font-size: 40px;
+        font-weight: bolder;
+        color: black;
+        margin-left: 90px;
+    }
+
+    .skills-icons ul {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: auto;
+        margin: 20px 40px;
+        margin-right: 100px;
+        padding-top: 50px;
+        justify-content: space-around;
+        text-decoration: none;
+        list-style-type: none;
+
+    }
+
+    .skills-icons img:hover {
+        transform: scale(1.5);
+    }
+
+    .skills-img{
+        position: relative;
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 150%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .skills-icons:hover .middle {
+        opacity: 1;
+      }
+
+      .skill-text{
+        border-radius: 20%;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+      }
+
+
+     /* -PROJECTS- */
+
+     .my-projects {
+        background-color: #61777F;
+        color: white;
+        width: 100%;
+        height: 750px;
+    }
+
+    .item-work{
+        font-size: 25px;
+        margin: -20px 190px;
+        padding-top: 30px
+    }
+
+    .item-video{
+        width: 100%;
+        margin: 70px 80px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-video .projects-videos{
+        position: relative;
+        margin: 30px; 
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    .item-video .projects-videos:hover .vid{
+        box-shadow:  10px 10px 20px 10px rgb(250, 249, 246, 0.2), 5px 5px 20px 5px rgb(250, 249, 246, 0.2);
+    }
+
+    .projects-videos .btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: transparent;
+        color: transparent;
+        font-size: 30px;
+        font-weight: bolder;
+        padding: 90px 150px;
+        border: none;
+        border-radius: 60px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: underline;
+        letter-spacing: 3px;
+      }
+
+     .btn:hover {
+        background-color: rgb(0, 0, 0, 0.8);
+        color: white;
+   }
+
+    .github-button{
+        margin: 35px 610px;
+    }
+
+    .github-button .btn-background-slide:active{
+        background-color: transparent;
+        margin-top: 4px;
+        margin-bottom: 8px;
+        box-shadow: 0px 0px;
+        background-color: black;
+        color: white;
+    }
+
+    /* -CONTACT */
+
+    .contact-me {
+        background-image: url(../Edith-portfolio/img/abstract-blue-geometric-shapes-background.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+        text-align: center;
+        padding-top: 10px;
+        display:  block;
+    }
+    .contact-me h2{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .btn-background-slide {
+        cursor: pointer;
+        text-decoration: none;
+        background-color: white;
+        height: 50px;
+        width: 200px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: bold;
+        box-shadow: 1px 2px 1px;
+        border-collapse: collapse;
+        border: none;
+        border-radius: 60px;
+    }
+
+    .btn-background-slide:active{
+        background-color: transparent;
+        margin-top: 4px;
+        margin-bottom: 8px;
+        box-shadow: 0px 0px;
+        background-color: black;
+        color: white;
+    }
+    
+
+    /* -FOOTER- */
+
+    footer {
+        height: 50px;
+        color: #61777F;
+        text-align: center;
+        font-size: 1.125rem;
+    }
+
+    /* ANCHOR */
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -150px;
+        visibility: hidden;
+    }
+
+
+    /*|| MEDIA QUERIES ||*/
+
+
+@media only screen and (max-width: 600px) {
+
+    /* Header */
+
+    .toggle-button {
+        display: flex;
+        margin: 45px 100px;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        background-color: #61777F;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+
+    .navbar-links.active {
+        display: flex;
+        font-weight: bolder;
+        margin-top: -110px;
+        align-items: flex-end;
+        background-color: white;
+        
+    }
+
+    .logo img{
+        width: 250px;
+        height: 60px;
+        margin: 20px auto 0 70px;
+    }
+
+
+    /* About*/
+
+    #about{
+        width: 100%;
+        height: 450px;
+    }
+
+    .profile-pic img{
+        margin: 4px 10px 4px -140px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-text{
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-text h2{
+        margin: -30px -100px auto 30px;
+        font-size: 20px;
+    }
+
+    .profile-text p{
+        font-size: 12px;
+        margin: auto -150px auto 50px;
+    }
+
+       /*skills*/
+
+       .my-skills{
+        width: 100%;
+    }
+
+
+    .my-skills h2{
+        margin: -40px 0 50px -6px;
+        padding: 0;
+        font-size: 25px;
+        width: 100%
+    }
+
+    .skills-icons ul{
+        margin-top: -40px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        gap: 70px 150px;
+    }
+
+    .skills-img img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .skill-text{
+        font-size: 12px;
+        font-weight: bolder;
+        margin: -30px auto auto 20px;
+        padding: 0;
+    }
+
+    /* Projects */
+
+    .my-projects{
+        width: 100%;
+        height: 1000px;
+    }
+
+    .item-work h2{
+        font-size: 24.5px;
+        margin-left: -120px;
+        margin-top: 30px;
+    }
+
+    .item-video{
+        width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px 125px;
+
+    }
+
+    .vid{
+        margin: 0px;
+        padding: 0;
+        height: 200px;
+        width: 300px;
+    }
+
+    .projects-videos .btn{
+        margin: 30px 0  0 150px;
+        padding: 60px;
+        width: 300px;
+        height: 180px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .btn a{
+        width: 1px;
+        height: -20px;
+    }
+     
+    .projects-videos{
+        height: 150px;
+        
+    }
+
+    .github-button{
+        margin-left: 200px;
+        margin-top: 80px;
+    }
+}
+
+    /* ||| MOBILE ||| */
+
+    @media only screen and (max-width: 320px){
+
+        body{
+            width: 100%;
+        }
+    
+        .navbar{
+            margin-top: -200px;
+            padding: 0;
+            width: 100%;
+        }
+    
+        .logo img{
+            width: 100px;
+            height: 35px;
+            margin: auto 0 auto 40px;
+            
+        }
+    
+        .toggle-button{
+            margin: 40px 50px 0 auto;
+        }
+    
+        .navbar-links.active{
+            margin-top: -50px;
+            padding: 0;
+        }
+     
+     
+         #about{
+             width: 100%;
+             height: 400px;
+             margin-top: 200px;
+             padding: 0;
+             display: flex;
+             flex-direction:column;
+             
+         }
+     
+         .profile-pic img{
+             margin: -2px auto auto 122px;
+             padding: 0;
+             width: 80px;
+             height: 80px;
+             border-radius: 0% 0% 50% 50%;
+         }
+     
+         .profile-text{
+             height: 20px;
+         }
+     
+         .profile-text h2{
+        
+            text-align: center;
+             margin: auto;
+             padding: 20px 30px;
+            
+     }
+     
+      .profile-text p{
+          margin: auto 20px;
+          text-align: center;
+          text-justify: inter-word;
+      }
+    
+        
+        .projects-videos .btn{
+            width: 10px;
+            height: 5px;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .github-button{
+            margin: 0;
+        }
+    
+    
+        #skills{
+            width: 100%;
+            height: 500px;
+        }
+    
+        .my-skills h2{
+            font-size: 18px;
+            text-align: center;
+            margin: -50px 0 50px -100px;;
+            width: 300px;
+            padding: 0;
+        }
+    
+        .skills-img img{
+            width: 40px;
+            height: 40px;
+        }
+    
+        .skills-icons ul{
+            padding: 0; 
+            margin: 0;
+            gap:50px 70px;
+        }
+    
+        #projects{
+            height: 850px;
+        }
+    
+        .item-work h2{
+            text-align: center;
+            font-size: 18px;
+            margin: auto 0 0 -150px;
+            width: 250px;
+            padding: 0;
+            }
+    
+          .vid{
+            width: 180px;
+           height: 110px;
+              margin-top: 30px;
+            margin-left: -75px;
+            padding: 0;
+          }
+        .projects-videos .btn{
+            
+            width: 180px;
+            height: 110px;
+            margin: 11px 9px 9px 15px
+        }
+    
+        .github-button{
+            margin-left: 75px;
+        }
+    
+    }
